@@ -12,10 +12,10 @@ namespace Alura.ByteBank.Infraestrutura.Testes
 {
     public class ClienteRepositorioTestes
     {
-         private ClienteRepositorio _repositorio;
+        private ClienteRepositorio _repositorio;
 
-         [Fact]
-         public void TestaObterTodosClientes()
+        [Fact]
+        public void TestaObterTodosClientes()
         {
             //Arrange
             _repositorio = new ClienteRepositorio();
@@ -70,7 +70,7 @@ namespace Alura.ByteBank.Infraestrutura.Testes
             cliente.Nome = nomeNovo;
 
             //Act
-            var atualizado = _repositorio.Atualizar(2,cliente);
+            var atualizado = _repositorio.Atualizar(2, cliente);
 
             //Assert
             Assert.True(atualizado);
